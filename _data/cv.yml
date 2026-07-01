@@ -2,81 +2,66 @@
   type: map
   contents:
     - name: Full Name
-      value: Peter Dai
-    - name: Profession
-      value: Educator & Technology Enthusiast
-    - name: Languages
-      value: English, Mandarin
+      value: Yuhang Dai (Peter)
+    - name: Email
+      value: yuhang.dai@connect.polyu.hk
+    - name: Location
+      value: Hong Kong SAR, China
 
 - title: Education
   type: time_table
   contents:
-    - title: Master's Degree
-      institution: [Your University]
-      year: [Year]
+    - title: MPhil in Data Science and Artificial Intelligence
+      institution: The Hong Kong Polytechnic University
+      year: Sep 2026 - Jun 2028
       description:
-        - Focus on Educational Technology and Innovation
-        - Research in modern teaching methodologies
-    - title: Bachelor's Degree
-      institution: [Your University]
-      year: [Year]
-      description:
-        - Major in Education
-        - Minor in Technology Integration
-
-- title: Experience
-  type: time_table
-  contents:
-    - title: Senior Educator
-      institution: [Your Current Institution]
-      year: Present
-      description:
-        - Leading innovative teaching programs
-        - Integrating technology in education
-        - Mentoring junior educators
-    - title: Education Technology Specialist
-      institution: [Previous Institution]
-      year: [Years]
-      description:
-        - Developed digital learning platforms
-        - Conducted teacher training workshops
-        - Implemented educational technology initiatives
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+        - Supervised by Prof. YANG Xingyi.
+    - title: BSc (Hons) Computer Science with Minor in Applied Mathematics
+      institution: The Hong Kong Polytechnic University
+      year: Sep 2022 - Jun 2026
+    - title: Summer School in Artificial Intelligence
+      institution: Tongji University
+      year: Jul 2023
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2023/24, 2024/25
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Dean's List, Faculty of Engineering, The Hong Kong Polytechnic University
+    - year: May 2025
       items:
-        - Max Planck Medal
+        - Department of Computing Scholarship for Hall Residents, PolyU Student Affairs Office and COMP Department
 
-- title: Academic Interests
+- title: Leadership and Service
+  type: time_table
+  contents:
+    - title: Committee Member
+      institution: PolyU Dreaming Cameramen Club
+      year: Jul 2024 - May 2025
+      description:
+        - Organized five major photography events with over 120 participants each.
+    - title: Hall Activity Organizer
+      institution: PolyU Student Halls
+      year: Sep 2023 - May 2025
+      description:
+        - Coordinated ten cultural and educational events serving 80+ residents each.
+        - Served as master of ceremonies for multiple hall events.
+    - title: Community Service Volunteer
+      institution: Various organizations in Hong Kong
+      year: Sep 2024 - May 2025
+      description:
+        - Contributed 80+ hours in cultural exchange, autism support, and environmental initiatives.
+
+- title: Technical Skills
   type: nested_list
   contents:
-    - title: Educational Technology
+    - title: Programming
       items:
-        - Digital learning platforms
-        - AI in education
-        - Online pedagogy
-    - title: Teaching Innovation
+        - Python, C/C++, Rust, Java, JavaScript, LaTeX
+    - title: Deep Learning and Vision
       items:
-        - Student-centered learning
-        - Project-based education
-        - Collaborative learning methods
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Professional Development:</u> Continuous learning, attending educational conferences
-    - <u>Community Engagement:</u> Volunteering in educational outreach programs
-    - <u>Personal:</u> Reading, technology exploration, lifelong learning
+        - PyTorch, Hugging Face Transformers, OpenCV, CLIP, SAM, Detectron2, MMDetection
+    - title: Tools and Platforms
+      items:
+        - Git, Docker, CUDA, Weights & Biases, Linux, AWS

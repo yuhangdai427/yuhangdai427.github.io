@@ -1,0 +1,362 @@
+/*******************************************************************************
+ * Minimal personal homepage styling for Yuhang Dai
+ ******************************************************************************/
+
+:root {
+  --global-bg-color: #ffffff;
+  --global-theme-color: #6f7f8f;
+  --global-hover-color: #4f6f8f;
+  --global-text-color: #555f68;
+  --global-text-color-light: #8b949e;
+  --global-divider-color: rgba(85, 95, 104, 0.14);
+  --global-card-bg-color: #ffffff;
+}
+
+body {
+  background: #ffffff;
+  color: #555f68;
+}
+
+.container {
+  max-width: 1160px;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  border-bottom: 1px solid rgba(85, 95, 104, 0.08);
+  border-top: 6px solid #2f3b4a;
+  box-shadow: none;
+}
+
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-brand {
+  color: #6b737b !important;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.navbar .navbar-collapse {
+  justify-content: flex-start;
+  text-align: left !important;
+}
+
+.navbar .navbar-nav {
+  flex-wrap: wrap !important;
+  margin-left: 0 !important;
+}
+
+.navbar .nav-item {
+  margin-right: 0.85rem;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link {
+  color: #3f5873 !important;
+}
+
+.about-grid {
+  align-items: start;
+  display: grid;
+  gap: 3.6rem;
+  grid-template-columns: 245px minmax(0, 1fr);
+  padding-top: 2.05rem;
+}
+
+.about-content {
+  min-width: 0;
+  padding-top: 0.1rem;
+}
+
+.about-content > p:first-child {
+  margin-top: 0;
+}
+
+.profile-sidebar {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  width: 245px;
+}
+
+.profile-sidebar figure {
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.profile-sidebar img {
+  aspect-ratio: 1 / 1;
+  border: 1px solid rgba(85, 95, 104, 0.12);
+  border-radius: 50% !important;
+  box-shadow: none !important;
+  display: block;
+  height: 178px;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center 18%;
+  padding: 5px;
+  width: 178px;
+}
+
+.sidebar-name {
+  color: #4f5861;
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.18;
+  margin: 0.55rem 0 1rem;
+}
+
+.sidebar-role {
+  color: #58626c;
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.45;
+  margin-bottom: 1rem;
+}
+
+.sidebar-role {
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.sidebar-links {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.sidebar-link-row {
+  align-items: flex-start;
+  color: #59636d;
+  display: grid;
+  font-size: 1rem;
+  font-weight: 600;
+  gap: 0.7rem;
+  grid-template-columns: 18px minmax(0, 1fr);
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.sidebar-link-row:hover {
+  color: #315f8e;
+  text-decoration: none;
+}
+
+.sidebar-link-row i {
+  color: #1d1f22;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.sidebar-link-row code {
+  background: transparent;
+  color: #59636d;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.86rem;
+  font-weight: 600;
+  padding: 0;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.post article h2 {
+  border-bottom: 1px solid rgba(85, 95, 104, 0.14);
+  color: #4e5964;
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-top: 1.75rem;
+  padding-bottom: 0.5rem;
+}
+
+.post article p,
+.post article li {
+  color: #535d67;
+  font-size: 1.05rem;
+  line-height: 1.58;
+}
+
+.post article ul {
+  padding-left: 1.25rem;
+}
+
+a,
+table.table a {
+  color: #5f788f;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover,
+table.table a:hover {
+  color: #3f5873;
+}
+
+.social {
+  margin-top: 1.5rem;
+}
+
+.contact-note {
+  color: #8b949e;
+  font-size: 0.88rem;
+}
+
+.section-intro {
+  margin-bottom: 1.1rem;
+}
+
+.section-intro h2 {
+  color: #777f87;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.timeline-list {
+  border-top: 1px solid rgba(85, 95, 104, 0.1);
+  margin: 1rem 0 1.6rem;
+}
+
+.timeline-item {
+  align-items: start;
+  border-bottom: 1px solid rgba(85, 95, 104, 0.1);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) 155px;
+  padding: 0.9rem 0;
+}
+
+.timeline-item h3,
+.activity-card h3 {
+  color: #606870;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-item p,
+.activity-card p,
+.section-intro p {
+  color: #68727c;
+  margin-bottom: 0;
+}
+
+.timeline-item > span,
+.activity-card span {
+  color: #8b949e;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.activity-grid {
+  display: block;
+}
+
+.activity-card {
+  border-bottom: 1px solid rgba(85, 95, 104, 0.1);
+  padding: 0.9rem 0;
+}
+
+.publication-item {
+  border-bottom: 1px solid rgba(85, 95, 104, 0.1);
+  display: grid;
+  gap: 1.35rem;
+  grid-template-columns: minmax(260px, 320px) minmax(0, 1fr);
+  padding: 1.45rem 0 1.55rem;
+  align-items: center;
+}
+
+.publication-item p {
+  margin-bottom: 0.3rem;
+}
+
+.publication-item .pub-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.publication-item .pub-authors,
+.publication-item .pub-links,
+.publication-item .pub-summary {
+  color: #68727c;
+  font-size: 0.95rem;
+}
+
+.pub-image {
+  aspect-ratio: 16 / 9.7;
+  display: block;
+  height: auto;
+  margin: 0;
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.pub-figure {
+  display: block;
+  text-decoration: none;
+}
+
+footer.fixed-bottom {
+  background-color: #f8f9fa !important;
+  border-top: 1px solid rgba(85, 95, 104, 0.1);
+}
+
+footer.fixed-bottom,
+footer.fixed-bottom a {
+  color: #8b949e !important;
+}
+
+@media (max-width: 767.98px) {
+  .profile-sidebar {
+    float: none !important;
+    margin: 0 0 0.75rem;
+    width: 100%;
+  }
+
+  .about-grid {
+    gap: 1.2rem;
+    grid-template-columns: 1fr;
+    padding-top: 1.2rem;
+  }
+
+  .profile-sidebar figure {
+    text-align: left;
+  }
+
+  .profile-sidebar img {
+    height: 142px;
+    margin-left: 0;
+    width: 142px;
+  }
+
+  .sidebar-name {
+    font-size: 1.45rem;
+  }
+
+  .sidebar-role {
+    font-size: 0.98rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .sidebar-role {
+    margin-top: 0.9rem;
+  }
+
+  .post article h2 {
+    font-size: 1.25rem;
+  }
+
+  .publication-item {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item > span {
+    order: -1;
+  }
+}
