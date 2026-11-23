@@ -14,6 +14,12 @@ nav_order: 1
   </p>
 </div>
 
+<style>
+  /* inline so the page never waits for a cached stylesheet: the cover by default, the GIF over it on hover (mouse only) */
+  .pub-hover { position: relative; }
+  .pub-hover .pub-gif { position: absolute; inset: 0; opacity: 0; transition: opacity 0.2s ease; }
+  @media (hover: hover) { .pub-hover:hover .pub-gif, .pub-hover:focus-visible .pub-gif { opacity: 1; } }
+</style>
 <div class="publication-item">
   <a class="pub-figure pub-hover" href="https://nopeworld.github.io/">
     <img class="pub-image" src="{{ '/assets/img/nopeworld_cover.webp' | relative_url }}" alt="Non-penetrating World Models: video world models walk through walls; NoPeWorld learns to say NoPe">
