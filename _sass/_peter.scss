@@ -297,6 +297,25 @@ table.table a:hover {
   text-decoration: none;
 }
 
+/* a cover by default; with a mouse, the animation shows while the pointer is on it (touch screens keep the cover) */
+.pub-hover {
+  position: relative;
+}
+
+.pub-hover .pub-gif {
+  inset: 0;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.2s ease;
+}
+
+@media (hover: hover) {
+  .pub-hover:hover .pub-gif,
+  .pub-hover:focus-visible .pub-gif {
+    opacity: 1;
+  }
+}
+
 footer.fixed-bottom {
   background-color: #f8f9fa !important;
   border-top: 1px solid rgba(85, 95, 104, 0.1);

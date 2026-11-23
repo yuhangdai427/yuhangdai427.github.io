@@ -80,7 +80,7 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5"
+          ruby-version: "3.3" # 3.3.5 has no build for the ubuntu-26.04 runners (the deploy failed on 11-23)
           bundler-cache: true
       - name: Setup Python 🐍
         uses: actions/setup-python@v5

@@ -33,8 +33,9 @@ My academic interests are in computer vision and machine learning, especially 3D
 ## 📝 Publications
 
 <div class="publication-item">
-  <a class="pub-figure" href="https://nopeworld.github.io/">
-    <img class="pub-image" src="{{ '/assets/img/nopeworld.gif' | relative_url }}" alt="Left: the raw world model walks through a brick pillar. Right: with NoPeWorld it stops at the bricks.">
+  <a class="pub-figure pub-hover" href="https://nopeworld.github.io/">
+    <img class="pub-image" src="{{ '/assets/img/nopeworld_cover.webp' | relative_url }}" alt="Non-penetrating World Models: video world models walk through walls; NoPeWorld learns to say NoPe">
+    <img class="pub-image pub-gif" src="{{ '/assets/img/nopeworld.gif' | relative_url }}" loading="lazy" alt="Left: the raw world model walks through a brick pillar. Right: with NoPeWorld it stops at the bricks.">
   </a>
   <div class="pub-meta">
     <p class="pub-title"><a href="https://arxiv.org/abs/2611.27963">Non-penetrating World Models</a></p>
